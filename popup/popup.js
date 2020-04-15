@@ -1,13 +1,16 @@
 function save_options() {
   var color = document.getElementById('themeColor').value;
+  // console.log(color);
   chrome.storage.sync.set({
     themeColor: color
   }, function () {
-    // Update status to let user know options were saved.
-    var status = document.getElementById('status');
-    status.textContent = 'Saved!';
+    // Update saveButton to let user know options were saved.
+    var saveButton = document.getElementById('save');
+    saveButton.disabled = true;
+    saveButton.textContent = 'Saved!';
     setTimeout(function () {
-      status.textContent = '';
+      saveButton.textContent = 'Save';
+      saveButton.disabled = false;
     }, 750);
   });
 }

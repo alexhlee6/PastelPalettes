@@ -3,21 +3,33 @@
   "name": "Twitter Pastel Palettes",
   "description": "Cute pastel color themes for Twitter in Chrome",
   "version": "1.0",
-  "content_scripts": [
-    {
-      "matches": ["https://twitter.com/*"],
-      "css": ["main.css"]
-    }
-  ],
   "browser_action": {
     "default_icon": "icon48.png",
-    "default_popup": "popup/popup.html",
-    "default_title": "Twitter Pastel Palettes"
+    "default_title": "Twitter Pastel Palettes",
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "colorThemes.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
   },
   "permissions": [
     "storage",
     "contextMenus",
-    "tabs"
+    "tabs",
+    "activeTab",
+    "https://twitter.com/*"
   ],
   "icons": {
     "48": "icon48.png",
