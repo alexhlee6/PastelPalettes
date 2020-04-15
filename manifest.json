@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Pink Twitter",
+  "description": "A cute theme for Twitter in Chrome",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "css": ["main.css"]
+    }
+  ],
+  "page_action": {
+    "default_icon": "img.png",
+    "default_popup": "popup.html",
+    "default_title": "Pink Theme"
+  }
+}
