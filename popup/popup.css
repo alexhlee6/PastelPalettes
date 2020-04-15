@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  width: 150px;
+  height: 150px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#save {
+  width: 100%;
+  background-color: rgb(240, 160, 172);
+  color: white;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#save:hover {
+  background-color: rgb(235, 134, 149);
+}
