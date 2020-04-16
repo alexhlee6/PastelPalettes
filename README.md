@@ -1,4 +1,4 @@
-<p align="center"><img src="./icon128.png" width="100px" /></p>
+<p align="center"><img src="./icons/icon128.png" width="100px" /></p>
 <h1 align="center">Pastel Palettes for Twitter</h1>
 
 <h4 align="center">
