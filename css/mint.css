@@ -9,15 +9,11 @@ header h1 .r-6416eg:hover {
 }
 
 header .r-1q3imqu {
-  /* background-color: rgba(171, 250, 238, 0.831); */
   background-color: rgba(93, 215, 213, 0.81);
 }
 
 .r-gtdqiz .r-13gxpu9 {
-  /* color: rgb(166, 247, 235); */
-  /* color: rgb(125, 230, 223); */
-  /* color: rgb(119, 222, 215); */
-  color: rgb(91, 213, 211);
+  color: rgb(91, 208, 206);
 }
 
 .r-156q2ks .r-13gxpu9 {
@@ -52,7 +48,8 @@ div .r-p1n3y5 {
 }
 
 div .r-urgr8i {
-  background-color: rgb(93, 215, 213);
+  /* background-color: rgb(93, 215, 213); */
+  background-color: rgb(91, 208, 206);
 }
 
 div .r-1q3imqu {
@@ -61,7 +58,7 @@ div .r-1q3imqu {
 
 
 div .r-13gxpu9 {
-  color: rgb(98, 218, 216);
+  color: rgb(91, 208, 206);
 }
 
 div .r-zv2cs0 {
@@ -77,7 +74,7 @@ div .r-18p3no4 {
 }
 
 div .r-1n1174f {
-  color: rgb(96, 210, 202);
+  color: rgb(91, 208, 206);
 }
 
 div .r-1u4rsef {
@@ -93,13 +90,10 @@ div .r-4rwt92 {
 }
 
 header .r-13gxpu9 {
-  /* color: rgb(101, 220, 218); */
-  /* color: rgb(118, 222, 215); */
-  color: rgb(98, 218, 216);
+  color: rgb(93, 213, 211);
 }
 
 header .r-urgr8i {
   background-color: unset;
-  /* background-color: rgb(171, 250, 238); */
-  background-color: rgb(98, 218, 216);
+  background-color: rgb(95, 211, 209);
 }
