@@ -8,16 +8,6 @@
     "default_title": "Twitter Pastel Palettes",
     "default_popup": "popup/popup.html"
   },
-  "content_scripts": [
-    {
-      "matches": [
-        "https://twitter.com/*"
-      ],
-      "js": [
-        "colorThemes.js"
-      ]
-    }
-  ],
   "background": {
     "scripts": [
       "background.js"
