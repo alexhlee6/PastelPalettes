@@ -16,7 +16,7 @@
 1. Click the icon to open the selection popup, choose a color palette, and click `Save` to apply the theme.
 1. Easily switch between color themes anytime using this popup window. *Make sure to save your changes!* 
 
-**Note: Must be using Twitter's default blue display color. Orginially designed to overwrite Twitter's light mode + blue accent default layout.**
+**Note: Must be using Twitter's default blue display color. Originally designed to overwrite Twitter's light mode + blue accent default layout.**
 
 
 
