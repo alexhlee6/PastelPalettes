@@ -1,10 +1,16 @@
 const setThemeColor = (tabId) => {
   chrome.storage.sync.get({
     themeColor: 'pink',
+    useOriginalFont: false
   }, (items) => {
     chrome.tabs.insertCSS(tabId, {
       file: `css/${items.themeColor}.css`
     });
+    if (items.useOriginalFont) {
+      chrome.tabs.insertCSS(tabId, {
+        file: `css/originalfont.css`
+      });
+    }
   })
 }
 

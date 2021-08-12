@@ -1,8 +1,10 @@
 function save_options() {
   var color = document.getElementById('themeColor').value;
+  var useOriginalFont = document.getElementById('useOriginalFont').value === "originalfont";
   // console.log(color);
   chrome.storage.sync.set({
-    themeColor: color
+    themeColor: color,
+    useOriginalFont: useOriginalFont
   }, function () {
     // Update saveButton to let user know options were saved.
     var saveButton = document.getElementById('save');
@@ -30,8 +32,10 @@ function restore_options() {
   // Use default value color = 'red'
   chrome.storage.sync.get({
     themeColor: 'pink',
+    useOriginalFont: false
   }, function (items) {
     document.getElementById('themeColor').value = items.themeColor;
+    document.getElementById('useOriginalFont').value = (items.useOriginalFont ? "originalfont" : "");
   });
 }
 document.addEventListener('DOMContentLoaded', restore_options);

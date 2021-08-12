@@ -6,15 +6,20 @@ body {
 
 main {
   width: 160px;
-  height: 235px;
+  height: 280px;
   padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 14px;
-  text-align: center;
+  text-align: left;
   line-height: 18px;
+}
+p {
+  margin: 0px;
+  margin-top: 5px;
+  text-align: left;
 }
 
 img {
@@ -22,7 +27,8 @@ img {
   object-fit: cover;
   margin: 0 auto;
   position: relative;
-  top: -5px;
+  top: 0px;
+  margin-bottom: 10px;
 }
 
 #save {
