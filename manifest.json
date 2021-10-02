@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Twitter Pastel Palettes",
   "description": "Cute pastel color themes for Twitter in Chrome",
-  "version": "0.0.0.4",
+  "version": "0.0.0.6",
   "browser_action": {
     "default_icon": "icons/icon48.png",
     "default_title": "Twitter Pastel Palettes",
