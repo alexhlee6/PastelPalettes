@@ -45,6 +45,9 @@ div[data-testid="primaryColumn"] article .r-krxsd3 a[role="link"] {
 .r-zso239 .r-vacyoi .r-1yzf0co * {
   color: var(--color-1) !important; 
 }
+.r-fif9oo .r-vacyoi .r-1yzf0co * {
+  color: var(--color-1) !important; 
+}
 .r-tzz3ar svg {
   color: var(--color-1) !important; 
 }
@@ -64,7 +67,7 @@ main .r-hdaws3 {
   background-color: var(--color-1) !important;
 }
 header nav .r-b88u0q {
-  color: var(--color-1) !important;
+  /* color: var(--color-1) !important; */
 }
 .r-19u6a5r .r-15ysp7h {
   border: 1px solid var(--color-1) !important;
