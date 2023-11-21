@@ -33,13 +33,16 @@ div[data-testid="primaryColumn"] article .r-krxsd3 a[role="link"] {
 .r-l5o3uw, .r-1vtznih {
   background-color: var(--color-1) !important;
 }
+.r-1pbtemp {
+    border-right-color: var(--color-1) !important;
+}
 .r-1cvl2hr {
   color: var(--color-1) !important;
 }
 .r-n6v787 a {
   color: var(--color-1) !important;
 }
-.r-vacyoi .r-1yzf0co * {
+.r-zso239 .r-vacyoi .r-1yzf0co * {
   color: var(--color-1) !important; 
 }
 .r-tzz3ar svg {
