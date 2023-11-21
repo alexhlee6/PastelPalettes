@@ -17,6 +17,15 @@ article span.r-18u37iz a {
 .r-1h8ys4a a[role="link"] {
     color: var(--color-1) !important;
 }
+article .r-1s2bzr4 a[role="link"] {
+    color: var(--color-1) !important;
+}
+div[data-testid="primaryColumn"] article .r-krxsd3 a[role="link"] {
+    color: var(--color-1) !important;
+}
+.r-jzhu7e a[role="link"][data-testid="empty_state_button_text"] {
+    background-color: var(--color-1) !important;
+}
 .r-yuvema {
     background-color: var(--color-1) !important;
     backdrop-filter: opacity(20%);

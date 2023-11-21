@@ -1,10 +1,10 @@
 function save_options() {
   var color = document.getElementById('themeColor').value;
-  var useOriginalFont = document.getElementById('useOriginalFont').value === "originalfont";
+  // var useOriginalFont = document.getElementById('useOriginalFont').value === "originalfont";
   // console.log(color);
   chrome.storage.sync.set({
     themeColor: color,
-    useOriginalFont: useOriginalFont
+    // useOriginalFont: useOriginalFont
   }, function () {
     // Update saveButton to let user know options were saved.
     var saveButton = document.getElementById('save');
@@ -15,7 +15,7 @@ function save_options() {
       saveButton.disabled = false;
     }, 750);
   });
-  chrome.tabs.query({ status: 'complete' }, (tabs) => {
+  chrome.tabs.query({ status: 'complete', active: true, currentWindow: true }, (tabs) => {
     tabs.forEach((tab) => {
       let regexPage = new RegExp(/https:\/\/twitter.com\//);
       let match = regexPage.exec(tab.url);
@@ -32,10 +32,10 @@ function restore_options() {
   // Use default value color = 'red'
   chrome.storage.sync.get({
     themeColor: 'pink',
-    useOriginalFont: false
+    // useOriginalFont: false
   }, function (items) {
     document.getElementById('themeColor').value = items.themeColor;
-    document.getElementById('useOriginalFont').value = (items.useOriginalFont ? "originalfont" : "");
+    // document.getElementById('useOriginalFont').value = (items.useOriginalFont ? "originalfont" : "");
   });
 }
 document.addEventListener('DOMContentLoaded', restore_options);

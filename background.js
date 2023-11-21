@@ -1,15 +1,15 @@
 const insertCSSCallback = async (tabId, items) => {
-  const insertPromise = await chrome.scripting.insertCSS({
-    files: ["css/main.css", `css/colors/${items.themeColor}.css`],
-    target: { tabId }
-  });
-  if (items.useOriginalFont) {
+  if (items.themeColor === "none") {
+    await chrome.scripting.removeCSS({
+      files: ["css/main.css"],
+      target: { tabId }
+    });
+  } else {
     await chrome.scripting.insertCSS({
-      files: [`css/originalfont.css`],
+      files: ["css/main.css", `css/colors/${items.themeColor}.css`],
       target: { tabId }
     });
   }
-  return insertPromise;
 }
 
 const setThemeColor = async (tabId) => {
