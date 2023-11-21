@@ -48,8 +48,11 @@ div[data-testid="primaryColumn"] article .r-krxsd3 a[role="link"] {
 .r-7qyjyx .r-19u6a5r {
   background-color: var(--color-1) !important;
 }
-.r-hdaws3 {
+main .r-hdaws3 {
   background-color: var(--color-1) !important; 
+}
+.r-qo02w8 .r-9dcw1g .r-42olwf {
+    background: transparent !important;
 }
 .r-uaa2di a {
   background-color: var(--color-1) !important; 
