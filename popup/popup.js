@@ -24,6 +24,15 @@ function save_options() {
       }
     });
   });
+  chrome.tabs.query({ status: 'complete', active: false }, (tabs) => {
+    tabs.forEach((tab) => {
+      let regexPage = new RegExp(/https:\/\/twitter.com\//);
+      let match = regexPage.exec(tab.url);
+      if (match) {
+        chrome.tabs.discard(tab.id);
+      }
+    });
+  });
 }
 
 // Restores select box and checkbox state using the preferences
