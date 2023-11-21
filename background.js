@@ -1,17 +1,24 @@
-const setThemeColor = (tabId) => {
+const insertCSSCallback = async (tabId, items) => {
+  const insertPromise = await chrome.scripting.insertCSS({
+    files: [`css/${items.themeColor}.css`],
+    target: { tabId }
+  });
+  if (items.useOriginalFont) {
+    await chrome.scripting.insertCSS({
+      files: [`css/originalfont.css`],
+      target: { tabId }
+    });
+  }
+  return insertPromise;
+}
+
+const setThemeColor = async (tabId) => {
   chrome.storage.sync.get({
     themeColor: 'pink',
     useOriginalFont: false
   }, (items) => {
-    chrome.tabs.insertCSS(tabId, {
-      file: `css/${items.themeColor}.css`
-    });
-    if (items.useOriginalFont) {
-      chrome.tabs.insertCSS(tabId, {
-        file: `css/originalfont.css`
-      });
-    }
-  })
+    insertCSSCallback(tabId, items)
+  });
 }
 
 var browserListener = function (tabId, changeInfo, tab) {

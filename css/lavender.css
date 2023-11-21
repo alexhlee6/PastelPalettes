@@ -1,3 +1,9 @@
+.r-56xrmm a {
+  color: rgb(175, 162, 242) !important;
+}
+span.r-18u37iz a {
+  color: rgb(175, 162, 242) !important;
+}
 .r-l5o3uw {
   background-color: rgb(175, 162, 242) !important;
 }
@@ -25,6 +31,9 @@ header nav .r-b88u0q {
 .r-19u6a5r .r-15ysp7h {
   border: 1px solid rgb(175, 162, 242) !important;
 }
+.r-1hycxz .r-19u6a5r .r-15ysp7h {
+  background-color: rgb(175, 162, 242) !important;
+}
 .css-18t94o4.css-1dbjc4n.r-42olwf.r-sdzlij.r-1phboty.r-rs99b7.r-15ysp7h.r-4wgw6l.r-1ny4l3l.r-ymttw5.r-o7ynqc.r-6416eg.r-lrvibr {
   background: rgb(175, 162, 242) !important;
 }
@@ -43,9 +52,9 @@ header nav .r-b88u0q {
 .r-1gn8etr .r-sb58tz .r-obd0qt .r-1qi8awa {
   background: transparent !important;
 }
-.r-19u6a5r .r-15ysp7h {
+/* .r-19u6a5r .r-15ysp7h {
   background: transparent !important;
-}
+} */
 .r-12d83nn {
   color: white !important;
 }
