@@ -1,6 +1,6 @@
 const insertCSSCallback = async (tabId, items) => {
   const insertPromise = await chrome.scripting.insertCSS({
-    files: [`css/${items.themeColor}.css`],
+    files: ["css/main.css", `css/colors/${items.themeColor}.css`],
     target: { tabId }
   });
   if (items.useOriginalFont) {
