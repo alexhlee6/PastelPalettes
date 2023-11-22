@@ -2,22 +2,24 @@ const handleSaveButtonActivated = () => {
   var saveButton = document.getElementById('save');
   saveButton.disabled = true;
   saveButton.textContent = 'Saved!';
-  setTimeout(function () {
-    saveButton.textContent = 'Save';
-    saveButton.disabled = false;
-  }, 750);
+}
+
+const handleSaveComplete = () => {
+  var saveButton = document.getElementById('save');
+  saveButton.textContent = 'Save';
+  saveButton.disabled = false;
 }
 
 const save_options = async () => {
+  // Show theme selection was saved on the popup
+  handleSaveButtonActivated();
+
   // Get the value of selected color
   const color = document.getElementById('themeColor').value;
   // Save the theme color to memory
   await chrome.storage.sync.set({
     themeColor: color
   });
-
-  // Show theme selection was saved on the popup
-  handleSaveButtonActivated();
 
   // Retrieve theme values from memory
   const items = await chrome.storage.sync.get({
@@ -35,24 +37,17 @@ const save_options = async () => {
     ]);
   }
   
-  chrome.tabs.query({ status: 'complete', active: true }, (tabs) => {
-    tabs.forEach((tab) => {
-      let regexPage = new RegExp(/https:\/\/twitter.com\//);
-      let match = regexPage.exec(tab.url);
-      if (match) {
-        chrome.tabs.update(tab.id, { url: tab.url });
-      }
-    });
-  });
-  chrome.tabs.query({ status: 'complete', active: false }, (tabs) => {
-    tabs.forEach((tab) => {
-      let regexPage = new RegExp(/https:\/\/twitter.com\//);
-      let match = regexPage.exec(tab.url);
-      if (match) {
-        chrome.tabs.discard(tab.id).catch(e => console.log(e));
-      }
-    });
-  });
+  const activeTabs = await chrome.tabs.query({ status: 'complete', active: true, url: "https://twitter.com/*" }); 
+  for (const tab of activeTabs) {
+    await chrome.tabs.update(tab.id, { url: tab.url });
+  };
+
+  const inactiveTabs = await chrome.tabs.query({ status: 'complete', active: false, discarded: false, url: "https://twitter.com/*" });
+  for (const tab of inactiveTabs) {
+    await chrome.tabs.discard(tab.id)
+  };
+
+  setTimeout(handleSaveComplete, 1200);
 }
 
 // Restores select box and checkbox state using the preferences
