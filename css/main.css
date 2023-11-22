@@ -60,7 +60,7 @@ main .r-hdaws3 {
 .r-uaa2di a {
   background-color: var(--color-1) !important; 
 }
-.r-1p6iasa svg {
+main .r-1p6iasa svg, .r-hvns9x .r-1p6iasa svg {
   color: var(--color-1) !important;
 }
 .r-1waj6vr {
@@ -86,6 +86,9 @@ header nav .r-b88u0q {
 }
 .r-9dcw1g .r-42olwf {
   background: var(--color-1) !important;
+}
+.r-qo02w8 .r-9dcw1g .r-42olwf {
+  background: transparent !important;
 }
 .r-1gn8etr .r-sb58tz .r-obd0qt .r-1qi8awa * {
   color: var(--color-1) !important;
