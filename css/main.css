@@ -66,8 +66,17 @@ main .r-1p6iasa svg, .r-hvns9x .r-1p6iasa svg {
 .r-1waj6vr {
   background-color: var(--color-1) !important;
 }
-header nav .r-b88u0q {
-  /* color: var(--color-1) !important; */
+.r-htvplk .r-xd6kpl div[data-testid="tweetButton"] {
+  background-color: var(--color-1) !important;
+}
+.r-htvplk div[data-testid="unsentButton"] .r-q4m81j {
+  color: var(--color-1) !important;
+}
+.r-htvplk .r-1igl3o0 .r-rjixqe, .r-htvplk .r-1igl3o0 .r-rjixqe svg {
+  color: var(--color-1) !important;
+}
+main .r-1h8ys4a .r-1igl3o0 .r-rjixqe, main .r-1h8ys4a .r-1igl3o0 .r-rjixqe svg {
+  color: var(--color-1) !important;
 }
 .r-19u6a5r .r-15ysp7h {
   border: 1px solid var(--color-1) !important;
