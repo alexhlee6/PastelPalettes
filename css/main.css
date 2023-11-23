@@ -14,6 +14,12 @@ article span.r-18u37iz a {
     background-color: var(--color-1) !important;
     /* backdrop-filter: opacity(20%); */
 }
+main div[data-testid="primaryColumn"] section[role="region"] div[role="button"][data-testid="UserCell"] a[role="link"] {
+  color: var(--color-1) !important;
+}
+main div[data-testid="primaryColumn"] section[role="region"] a.r-1yzf0co div span {
+  color: var(--color-1) !important;
+}
 aside .r-1h8ys4a a[role="link"] {
     color: var(--color-1) !important;
 }
@@ -103,8 +109,11 @@ main .r-1h8ys4a .r-1igl3o0 .r-rjixqe, main .r-1h8ys4a .r-1igl3o0 .r-rjixqe svg {
   background: transparent !important;
 }
 .r-1gn8etr .r-sb58tz .r-obd0qt .r-1qi8awa * {
-  color: var(--color-1) !important;
+  /* color: var(--color-1) !important; */
 }
 header .r-13gxpu9 {
   color: var(--color-1);
+}
+main div[data-testid="primaryColumn"] div[data-testid="UserDescription"] a.r-1loqt21[role="link"] {
+  color: var(--color-1) !important;
 }
