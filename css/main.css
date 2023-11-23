@@ -117,3 +117,7 @@ header .r-13gxpu9 {
 main div[data-testid="primaryColumn"] div[data-testid="UserDescription"] a.r-1loqt21[role="link"] {
   color: var(--color-1) !important;
 }
+
+main div[data-testid="primaryColumn"] .r-1ye8kvj .r-1pl7oy7 .r-q4m81j span {
+  color: var(--color-1) !important
+}
