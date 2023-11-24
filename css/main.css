@@ -178,3 +178,6 @@ main div[data-testid="primaryColumn"] section[role="region"] a.r-1yzf0co[data-te
 main div[data-testid="primaryColumn"] div[data-testid="cellInnerDiv"] div[role="button"][data-testid="UserCell"] .r-19u6a5r .r-15ysp7h span { 
   color: unset;
 }
+main div[data-testid="primaryColumn"] div[data-testid="cellInnerDiv"] div[role="button"][data-testid="tweetButtonInline"] span {
+  color: unset;
+}
