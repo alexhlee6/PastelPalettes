@@ -121,3 +121,60 @@ main div[data-testid="primaryColumn"] div[data-testid="UserDescription"] a.r-1lo
 main div[data-testid="primaryColumn"] .r-1ye8kvj .r-1pl7oy7 .r-q4m81j span {
   color: var(--color-1) !important
 }
+.r-vhj8yc {
+  border-bottom-color: var(--color-1) !important;
+  border-top-color: var(--color-1) !important;
+  border-left-color: var(--color-1) !important;
+  border-right-color: var(--color-1) !important;
+}
+main div[data-testid="primaryColumn"] article .r-kzbkwu .r-4qtqp9 span {
+  color: var(--color-1) !important;
+}
+main div[data-testid="primaryColumn"] form[role="search"] div.r-1y7e96w[role="button"] {
+  background-color: var(--color-1) !important;
+}
+main div[data-testid="primaryColumn"] form[role="search"] .r-1e081e0 span {
+  color: var(--color-1) !important;
+}
+main div[data-testid="primaryColumn"] form[role="search"] div[role="button"] svg {
+  color: var(--color-1) I !important
+}
+
+main div[data-testid="primaryColumn"] .r-1ifxtd0 .r-6gpygo .r-n6v787[role="button"] span {
+  color: var(--color-1);
+}
+
+main div[data-testid="primaryColumn"] article .r-n6v787.r-14gqq1x span {
+  color: var(--color-1);
+}
+main div[data-testid="primaryColumn"] article span.r-n6v787[role="button"] {
+  color: var(--color-1) !important;
+}
+article[data-testid="tweet"] .r-1s2bzr4 .r-n6v787.r-14gqq1x, article[data-testid="tweet"] .r-1s2bzr4 span.r-n6v787[role="button"] {
+  color: var(--color-1) !important;
+}
+main .r-1p6iasa div[role="presentation"] div[aria-label="Play"] svg {
+  color: unset !important;
+}
+.r-htfu76 .r-kzbkwu div.r-lp5zef[aria-label="Everyone can reply"] .r-a023e6, .r-htfu76 .r-kzbkwu div.r-lp5zef[aria-label="Everyone can reply"] .r-a023e6 .r-yyyyoo {
+  color: var(--color-1) !important;
+}
+
+main div[data-testid="primaryColumn"] .r-1h8ys4a .r-n1gths div[role="button"] span.r-poiln3 span.r-poiln3 {
+  color: var(--color-1);
+}
+article[data-testid="tweet"] div[data-testid="tweet-text-show-more-link"] span {
+  color: var(--color-1);
+}
+main div[data-testid="primaryColumn"] div[data-testid="cellInnerDiv"] .r-5njf8e span {
+  color: var(--color-1);
+}
+main div[data-testid="primaryColumn"] div[data-testid="cellInnerDiv"] div[role="button"] .r-q4m81j span {
+  color: var(--color-1); 
+}
+main div[data-testid="primaryColumn"] section[role="region"] a.r-1yzf0co[data-testid="analyticsButton"] span {
+  color: unset !important;
+}
+main div[data-testid="primaryColumn"] div[data-testid="cellInnerDiv"] div[role="button"][data-testid="UserCell"] .r-19u6a5r .r-15ysp7h span { 
+  color: unset;
+}
