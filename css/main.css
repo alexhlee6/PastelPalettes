@@ -166,6 +166,9 @@ main div[data-testid="primaryColumn"] .r-1h8ys4a .r-n1gths div[role="button"] sp
 article[data-testid="tweet"] div[data-testid="tweet-text-show-more-link"] span {
   color: var(--color-1);
 }
+article[data-testid="tweet"] a[data-testid="tweet-text-show-more-link"] span {
+  color: var(--color-1);
+}
 main div[data-testid="primaryColumn"] div[data-testid="cellInnerDiv"] .r-5njf8e span {
   color: var(--color-1);
 }
