@@ -1,6 +1,9 @@
 .r-56xrmm a {
   color: var(--color-1) !important;
 }
+header[role="banner"] a[role="link"][aria-label="Post"], header[role="banner"] a[role="link"][data-testid="SideNav_NewTweet_Button"] {
+  background-color: var(--color-1) !important;
+}
 article span.r-18u37iz a {
   color: var(--color-1) !important;
 }
