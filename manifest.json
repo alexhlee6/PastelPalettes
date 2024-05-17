@@ -17,7 +17,7 @@
   "permissions": [
     "storage",
     "tabs",
-    "https://twitter.com/*"
+    "https://x.com/*"
   ],
   "icons": {
     "48": "icons/icon48.png",
