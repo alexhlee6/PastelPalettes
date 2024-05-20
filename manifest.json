@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Twitter Pastel Palettes",
   "description": "Cute pastel color themes for Twitter/X in Chrome",
-  "version": "1.6",
+  "version": "1.7",
   "action": {
     "default_popup": "popup/popup.html",
     "default_icon": "icons/icon48.png",
@@ -17,7 +17,8 @@
     "scripting"
   ],
   "host_permissions": [
-    "https://twitter.com/*"
+    "https://twitter.com/*",
+    "https://x.com/*"
   ],
   "icons": {
     "48": "icons/icon48.png",

@@ -21,8 +21,8 @@ const setThemeColorInitial = async () => {
   } else {
     await chrome.scripting.unregisterContentScripts();
     await chrome.scripting.registerContentScripts([
-      { id: "main", matches: ['https://twitter.com/*'], css: ['css/main.css'], runAt: "document_start" },
-      { id: "theme-color", matches: ['https://twitter.com/*'], css: [`css/colors/${items.themeColor}.css`], runAt: "document_start" }
+      { id: "main", matches: ['https://twitter.com/*', 'https://x.com/*'], css: ['css/main.css'], runAt: "document_start" },
+      { id: "theme-color", matches: ['https://twitter.com/*', 'https://x.com/*'], css: [`css/colors/${items.themeColor}.css`], runAt: "document_start" }
     ]).catch(e => console.log(e));
   }
 }
@@ -30,9 +30,10 @@ const setThemeColorInitial = async () => {
 
 const doSetup = async () => {
   const twtTabs = await chrome.tabs.query({ status: 'complete', discarded: false, url: "https://twitter.com/*" }).catch(e => console.log(e));
-
-  for (let i = 0; i < twtTabs.length; i++) {
-    const tab = twtTabs[i];
+  const xTabs = await chrome.tabs.query({ status: 'complete', discarded: false, url: "https://x.com/*" }).catch(e => console.log(e));
+  const allTwtTabs = [...twtTabs, ...xTabs]
+  for (let i = 0; i < allTwtTabs.length; i++) {
+    const tab = allTwtTabs[i];
     await chrome.scripting.removeCSS({
       files: OLD_FILES_TO_REMOVE,
       target: { tabId: tab.id }
@@ -40,7 +41,7 @@ const doSetup = async () => {
   }
 
   await setThemeColorInitial();
-  twtTabs.forEach(tab => {
+  allTwtTabs.forEach(tab => {
     if (tab.active) {
       chrome.tabs.update(tab.id, { url: tab.url }).catch(e => console.log(e));
     } else {
